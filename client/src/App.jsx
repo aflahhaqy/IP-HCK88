@@ -1,12 +1,15 @@
-const { BrowserRouter, Routes, Route } = require("react-router-dom");
-
+import { BrowserRouter, Routes, Route } from "react-router";
+import Home from "./pages/home";
+import Register from "./pages/register";
+import Login from "./pages/login";
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
