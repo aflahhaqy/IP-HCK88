@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const port = 3000;
@@ -11,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", UserController.home);
 app.post("/register", UserController.register);
 app.post("/login", UserController.login);
-
+app.post("/login/google", UserController.googleLogin);
 
 
 app.listen(port, () => {
