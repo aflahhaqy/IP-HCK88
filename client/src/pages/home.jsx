@@ -41,13 +41,11 @@ export default function Home() {
       const response = await apiClient.get("/seller/nearest");
       if (response.data.data) {
         setNearestSellers(response.data.data);
-        // Update user location ke Redux dari response
         if (response.data.customerLocation) {
           dispatch(setUserLocation(response.data.customerLocation));
         }
       }
     } catch (error) {
-      // Jika error 400 (lokasi belum diset), tidak masalah
       if (error.response?.status !== 400) {
         alert("Failed to fetch nearest sellers. Please try again.");
       }
@@ -56,10 +54,8 @@ export default function Home() {
 
   const handleUpdateLocation = async () => {
     try {
-      // Dispatch Redux action to update location
       const result = await dispatch(updateCurrentLocation()).unwrap();
 
-      // Fetch nearest sellers after location update
       await fetchNearestSellers();
 
       alert(
@@ -79,11 +75,9 @@ export default function Home() {
     }
   };
 
-  // Safely read environment key for MapTiler (Vite: VITE_MAPTILER_KEY)
   const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY || "";
 
 
-  // Prepare locations array for map (convert sellers to map format)
   const mapLocations = nearestSellers.map((seller) => ({
     lat: seller.locationLat,
     lng: seller.locationLng,
@@ -97,11 +91,9 @@ export default function Home() {
     try {
       const response = await apiClient.get("/recommendations");
 
-      // Check if response.data is an array (direct array response)
       if (Array.isArray(response.data)) {
         setRecommendations(response.data);
       }
-      // Check if response.data has recommendations property (nested object response)
       else if (response.data && response.data.recommendations) {
         setRecommendations(response.data.recommendations);
         setTimeOfDay(response.data.timeOfDay || "");
@@ -112,20 +104,16 @@ export default function Home() {
   };
 
   const handleLogout = () => {
-    // Dispatch Redux logout action
     dispatch(logout());
-    // Redirect to login page
     navigate("/login");
   };
 
   useEffect(() => {
     fetchRecommendations();
     fetchProducts();
-    // Check if user is logged in using Redux
     if (!isAuthenticated) {
       navigate("/login");
     } else {
-      // Fetch nearest sellers if logged in
       fetchNearestSellers();
     }
   }, [navigate, isAuthenticated]);

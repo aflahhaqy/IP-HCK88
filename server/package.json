@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "jest --detectOpenHandles --verbose --forceExit",
-    "test:coverage": "jest --coverage --detectOpenHandles --verbose --forceExit"
+    "test:coverage": "jest --coverage --detectOpenHandles --verbose --forceExit",
+    "migrate": "sequelize-cli db:migrate",
+    "migrate:prod": "sequelize-cli db:migrate --env production",
+    "migrate:undo": "sequelize-cli db:migrate:undo",
+    "migrate:status": "sequelize-cli db:migrate:status",
+    "seed": "sequelize-cli db:seed:all",
+    "seed:prod": "sequelize-cli db:seed:all --env production"
   },
   "jest": {
     "testEnvironment": "node",
