@@ -2,24 +2,24 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('LocationLogs', {
+    await queryInterface.createTable('Products', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      StaffId: {
-        type: Sequelize.INTEGER,
-        references: { model: 'Staffs', key: 'id' },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE'
+      name: {
+        type: Sequelize.STRING
       },
-      latitude: {
-        type: Sequelize.DECIMAL
+      description: {
+        type: Sequelize.TEXT
       },
-      longitude: {
-        type: Sequelize.DECIMAL
+      price: {
+        type: Sequelize.INTEGER
+      },
+      imageUrl: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -32,6 +32,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('LocationLogs');
+    await queryInterface.dropTable('Products');
   }
 };

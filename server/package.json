@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --detectOpenHandles --verbose --forceExit",
+    "test:coverage": "jest --coverage --detectOpenHandles --verbose --forceExit"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["./__test__/setup.js"],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -17,10 +25,15 @@
     "express": "^5.1.0",
     "google-auth-library": "^10.4.0",
     "jsonwebtoken": "^9.0.2",
+    "midtrans-client": "^1.4.3",
+    "openai": "^6.3.0",
     "pg": "^8.16.3",
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.6.3"
+    "@jest/globals": "^30.2.0",
+    "jest": "^30.2.0",
+    "sequelize-cli": "^6.6.3",
+    "supertest": "^7.1.4"
   }
 }

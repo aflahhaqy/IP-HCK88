@@ -1,19 +1,22 @@
 import { useState } from "react";
 import apiClient from "../helpers/http-client";
+import { useNavigate } from "react-router";
 
 export default function Register() {
+    const navigate = useNavigate();
+    const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    console.log({ email, password });
     try {
-      const response = await apiClient.post("/register", { email, password });
-      console.log("Registration successful:", response.data);
+      await apiClient.post("/register", { email, password, name });
+      alert("Registration successful! Please login.");
+      navigate("/login");
     } catch (error) {
-      console.error("Registration failed:", error);
+      alert(error.response?.data?.error || "Registration failed. Please try again.");
     }
   };
 
@@ -22,13 +25,27 @@ export default function Register() {
       <div className="w-full lg:w-1/2 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8">
         <div className="w-full max-w-md">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">
-              Hi !
-            </h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-2">Hi !</h1>
             <p className="text-gray-600">Please fill details below</p>
           </div>
 
           <form onSubmit={handleRegister} className="space-y-5">
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-gray-700 text-sm mb-2"
+              >
+                name
+              </label>
+              <input
+                id="name"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
+              />
+            </div>
             <div>
               <label
                 htmlFor="email"

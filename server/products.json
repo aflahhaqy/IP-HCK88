@@ -2,76 +2,51 @@
   {
     "name": "Caffè Americano",
     "price": 28000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Caffe-Americano.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648177958-Fr0LZN.jpg"
   },
   {
     "name": "Caffè Latte",
     "price": 32000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Caffe-Latte.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648003627-BAvSkQ.jpg"
   },
   {
     "name": "Cappuccino",
     "price": 33000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Cappuccino.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648177627-M2DCzE.jpg"
   },
   {
     "name": "Caramel Macchiato",
     "price": 37000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Caramel-Macchiato.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648004895-jD5H6f.jpg"
   },
   {
     "name": "Caffè Mocha",
     "price": 38000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Caffe-Mocha.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648004345-o2CDyC.jpg"
   },
   {
     "name": "Flat White",
     "price": 35000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Flat-White.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648178420-hXBtmc.jpg"
   },
   {
-    "name": "Espresso Macchiato",
+    "name": "Matcha Coffee Latte",
     "price": 26000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Espresso-Macchiato.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648472369-2grEKL.jpg"
   },
   {
     "name": "Cold Brew",
     "price": 34000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Cold-Brew.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648179352-Yk4kf9.jpg"
   },
   {
-    "name": "Nitro Cold Brew",
-    "price": 40000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Nitro-Cold-Brew.jpg"
-  },
-  {
-    "name": "Iced Shaken Espresso",
+    "name": "Cocoa Cappuccino",
     "price": 36000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Iced-Shaken-Espresso.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648471907-ysYL8i.jpg"
   },
   {
     "name": "Vanilla Sweet Cream Cold Brew",
     "price": 39000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Vanilla-Sweet-Cream-Cold-Brew.jpg"
-  },
-  {
-    "name": "Iced Caramel Macchiato",
-    "price": 37000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Iced-Caramel-Macchiato.jpg"
-  },
-  {
-    "name": "Java Chip Frappuccino",
-    "price": 42000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Java-Chip-Frappuccino.jpg"
-  },
-  {
-    "name": "Mocha Frappuccino",
-    "price": 41000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Mocha-Frappuccino.jpg"
-  },
-  {
-    "name": "Espresso Frappuccino",
-    "price": 40000,
-    "imageUrl": "https://globalassets.starbucks.com/digitalassets/products/bev/Espresso-Frappuccino.jpg"
+    "imageUrl": "https://d1l2u51dcz3kfu.cloudfront.net/temporary/gallery/1648179505-K7epS0.jpg"
   }
 ]

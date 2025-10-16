@@ -2,27 +2,22 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Inventories', {
+    await queryInterface.createTable('CustomerProfiles', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      StaffId: {
+      userId: {
         type: Sequelize.INTEGER,
-        references: { model: 'Staffs', key: 'id' },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE'
+        references: { model: 'Users', key: 'id' }
       },
-      ProductId: {
-        type: Sequelize.INTEGER,
-        references: { model: 'Products', key: 'id' },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE'
+      locationLat: {
+        type: Sequelize.FLOAT
       },
-      stock: {
-        type: Sequelize.INTEGER
+      locationLng: {
+        type: Sequelize.FLOAT
       },
       createdAt: {
         allowNull: false,
@@ -35,6 +30,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Inventories');
+    await queryInterface.dropTable('CustomerProfiles');
   }
 };
