@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import apiClient from "../helpers/http-client";
+import { toast } from "react-toastify";
 
 export default function SellerInventory() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function SellerInventory() {
         setSeller(response.data.seller);
         setInventory(response.data.inventory || []);
       } catch {
-        alert("Gagal memuat data penjual");
+        toast.error("Gagal memuat data penjual");
       } finally {
         setIsLoading(false);
       }

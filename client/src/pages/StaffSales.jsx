@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import apiClient from "../helpers/http-client";
+import { toast } from "react-toastify";
 
 export default function StaffSales() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function StaffSales() {
       const response = await apiClient.get("/staff/sales/today");
       setSalesData(response.data);
     } catch {
-      alert("Gagal memuat data penjualan");
+      toast.error("Gagal memuat data penjualan");
     } finally {
       setIsLoading(false);
     }
