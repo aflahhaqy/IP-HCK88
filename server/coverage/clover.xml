@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1760672853190" clover="3.2.0">
+  <project timestamp="1760672853190" name="All files">
+    <metrics statements="578" coveredstatements="526" conditionals="229" coveredconditionals="197" methods="81" coveredmethods="77" elements="888" coveredelements="800" complexity="0" loc="578" ncloc="578" packages="6" files="23" classes="23"/>
+    <package name="server">
+      <metrics statements="75" coveredstatements="69" conditionals="38" coveredconditionals="31" methods="10" coveredmethods="8"/>
+      <file name="app.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\app.js">
+        <metrics statements="75" coveredstatements="69" conditionals="38" coveredconditionals="31" methods="10" coveredmethods="8"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="30" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="13" type="stmt"/>
+        <line num="46" count="13" type="stmt"/>
+        <line num="49" count="13" type="stmt"/>
+        <line num="53" count="13" type="cond" truecount="4" falsecount="0"/>
+        <line num="54" count="9" type="stmt"/>
+        <line num="55" count="9" type="stmt"/>
+        <line num="56" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
+        <line num="66" count="13" type="stmt"/>
+        <line num="67" count="130" type="stmt"/>
+        <line num="70" count="13" type="stmt"/>
+        <line num="90" count="13" type="stmt"/>
+        <line num="91" count="13" type="stmt"/>
+        <line num="94" count="12" type="stmt"/>
+        <line num="95" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="96" count="5" type="stmt"/>
+        <line num="99" count="5" type="stmt"/>
+        <line num="101" count="95" type="stmt"/>
+        <line num="102" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="103" count="3" type="stmt"/>
+        <line num="119" count="8" type="stmt"/>
+        <line num="121" count="11" type="stmt"/>
+        <line num="123" count="5" type="stmt"/>
+        <line num="126" count="21" type="stmt"/>
+        <line num="135" count="7" type="stmt"/>
+        <line num="138" count="1" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="147" count="1" type="stmt"/>
+        <line num="150" count="1" type="stmt"/>
+        <line num="151" count="25" type="cond" truecount="2" falsecount="0"/>
+        <line num="152" count="25" type="cond" truecount="1" falsecount="1"/>
+        <line num="154" count="25" type="cond" truecount="1" falsecount="1"/>
+        <line num="158" count="0" type="stmt"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="160" count="25" type="cond" truecount="2" falsecount="0"/>
+        <line num="161" count="24" type="stmt"/>
+        <line num="162" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="163" count="0" type="stmt"/>
+        <line num="164" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="165" count="0" type="stmt"/>
+        <line num="168" count="25" type="stmt"/>
+        <line num="172" count="1" type="stmt"/>
+        <line num="175" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="176" count="0" type="stmt"/>
+        <line num="177" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.controllers">
+      <metrics statements="333" coveredstatements="289" conditionals="165" coveredconditionals="144" methods="39" coveredmethods="37"/>
+      <file name="customerController.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\controllers\customerController.js">
+        <metrics statements="40" coveredstatements="35" conditionals="19" coveredconditionals="16" methods="8" coveredmethods="8"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="18" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="29" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="52" count="6" type="stmt"/>
+        <line num="53" count="6" type="stmt"/>
+        <line num="57" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="3" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+        <line num="78" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="84" count="3" type="stmt"/>
+        <line num="85" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="87" count="5" type="stmt"/>
+        <line num="94" count="5" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+        <line num="106" count="3" type="stmt"/>
+        <line num="115" count="0" type="stmt"/>
+        <line num="120" count="5" type="stmt"/>
+        <line num="121" count="5" type="stmt"/>
+        <line num="122" count="5" type="stmt"/>
+        <line num="132" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="133" count="2" type="stmt"/>
+        <line num="137" count="3" type="stmt"/>
+        <line num="147" count="4" type="stmt"/>
+        <line num="156" count="3" type="stmt"/>
+        <line num="170" count="0" type="stmt"/>
+        <line num="175" count="3" type="stmt"/>
+        <line num="176" count="3" type="stmt"/>
+        <line num="180" count="3" type="stmt"/>
+        <line num="185" count="0" type="stmt"/>
+      </file>
+      <file name="paymentController.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\controllers\paymentController.js">
+        <metrics statements="37" coveredstatements="31" conditionals="26" coveredconditionals="23" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="22" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="37" count="11" type="stmt"/>
+        <line num="47" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="53" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="71" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="77" count="3" type="stmt"/>
+        <line num="79" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="81" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="85" count="3" type="stmt"/>
+        <line num="86" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="90" count="10" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="99" count="3" type="stmt"/>
+        <line num="100" count="3" type="stmt"/>
+        <line num="102" count="3" type="stmt"/>
+        <line num="106" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="107" count="2" type="stmt"/>
+        <line num="112" count="1" type="stmt"/>
+        <line num="114" count="1" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+      </file>
+      <file name="staffController.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\controllers\staffController.js">
+        <metrics statements="205" coveredstatements="177" conditionals="100" coveredconditionals="88" methods="24" coveredmethods="22"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="21" count="10" type="stmt"/>
+        <line num="23" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="29" count="9" type="stmt"/>
+        <line num="33" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="39" count="7" type="stmt"/>
+        <line num="42" count="9" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="54" count="8" type="stmt"/>
+        <line num="55" count="8" type="stmt"/>
+        <line num="57" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
+        <line num="68" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="75" count="6" type="stmt"/>
+        <line num="81" count="7" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="91" count="2" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
+        <line num="103" count="2" type="stmt"/>
+        <line num="113" count="2" type="stmt"/>
+        <line num="119" count="0" type="stmt"/>
+        <line num="124" count="10" type="stmt"/>
+        <line num="125" count="10" type="stmt"/>
+        <line num="126" count="10" type="stmt"/>
+        <line num="128" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="134" count="9" type="stmt"/>
+        <line num="135" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="136" count="0" type="stmt"/>
+        <line num="140" count="9" type="stmt"/>
+        <line num="144" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="152" count="9" type="stmt"/>
+        <line num="153" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="154" count="1" type="stmt"/>
+        <line num="159" count="8" type="stmt"/>
+        <line num="166" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="167" count="3" type="stmt"/>
+        <line num="173" count="5" type="stmt"/>
+        <line num="176" count="7" type="stmt"/>
+        <line num="185" count="7" type="stmt"/>
+        <line num="195" count="1" type="stmt"/>
+        <line num="200" count="1" type="stmt"/>
+        <line num="201" count="1" type="stmt"/>
+        <line num="203" count="1" type="stmt"/>
+        <line num="216" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="217" count="0" type="stmt"/>
+        <line num="222" count="1" type="stmt"/>
+        <line num="224" count="1" type="stmt"/>
+        <line num="226" count="1" type="stmt"/>
+        <line num="234" count="0" type="stmt"/>
+        <line num="239" count="4" type="stmt"/>
+        <line num="240" count="4" type="stmt"/>
+        <line num="242" count="4" type="stmt"/>
+        <line num="246" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="247" count="2" type="stmt"/>
+        <line num="250" count="4" type="stmt"/>
+        <line num="271" count="4" type="stmt"/>
+        <line num="272" count="0" type="stmt"/>
+        <line num="273" count="0" type="stmt"/>
+        <line num="274" count="0" type="stmt"/>
+        <line num="275" count="0" type="stmt"/>
+        <line num="276" count="0" type="stmt"/>
+        <line num="285" count="0" type="stmt"/>
+        <line num="299" count="4" type="stmt"/>
+        <line num="306" count="0" type="stmt"/>
+        <line num="311" count="12" type="stmt"/>
+        <line num="312" count="12" type="stmt"/>
+        <line num="314" count="12" type="cond" truecount="5" falsecount="0"/>
+        <line num="315" count="2" type="stmt"/>
+        <line num="319" count="10" type="stmt"/>
+        <line num="320" count="10" type="stmt"/>
+        <line num="321" count="10" type="stmt"/>
+        <line num="323" count="10" type="stmt"/>
+        <line num="324" count="10" type="stmt"/>
+        <line num="326" count="10" type="cond" truecount="5" falsecount="0"/>
+        <line num="327" count="2" type="stmt"/>
+        <line num="332" count="8" type="stmt"/>
+        <line num="333" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="334" count="1" type="stmt"/>
+        <line num="339" count="7" type="stmt"/>
+        <line num="346" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="347" count="2" type="stmt"/>
+        <line num="354" count="5" type="stmt"/>
+        <line num="355" count="5" type="stmt"/>
+        <line num="357" count="5" type="stmt"/>
+        <line num="364" count="5" type="stmt"/>
+        <line num="372" count="5" type="stmt"/>
+        <line num="374" count="5" type="stmt"/>
+        <line num="381" count="5" type="stmt"/>
+        <line num="382" count="5" type="stmt"/>
+        <line num="388" count="5" type="stmt"/>
+        <line num="389" count="5" type="stmt"/>
+        <line num="395" count="5" type="stmt"/>
+        <line num="402" count="5" type="stmt"/>
+        <line num="416" count="5" type="stmt"/>
+        <line num="426" count="5" type="stmt"/>
+        <line num="436" count="0" type="stmt"/>
+        <line num="439" count="0" type="stmt"/>
+        <line num="441" count="0" type="stmt"/>
+        <line num="444" count="0" type="stmt"/>
+        <line num="448" count="4" type="stmt"/>
+        <line num="449" count="4" type="stmt"/>
+        <line num="451" count="4" type="stmt"/>
+        <line num="465" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="466" count="1" type="stmt"/>
+        <line num="471" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="472" count="1" type="stmt"/>
+        <line num="477" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="478" count="2" type="stmt"/>
+        <line num="479" count="2" type="stmt"/>
+        <line num="483" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="487" count="0" type="stmt"/>
+        <line num="493" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="494" count="0" type="stmt"/>
+        <line num="495" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="496" count="0" type="stmt"/>
+        <line num="499" count="2" type="stmt"/>
+        <line num="503" count="2" type="stmt"/>
+        <line num="513" count="2" type="stmt"/>
+        <line num="522" count="0" type="stmt"/>
+        <line num="527" count="5" type="stmt"/>
+        <line num="528" count="5" type="stmt"/>
+        <line num="530" count="5" type="stmt"/>
+        <line num="539" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="540" count="0" type="stmt"/>
+        <line num="545" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="546" count="1" type="stmt"/>
+        <line num="550" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="551" count="1" type="stmt"/>
+        <line num="556" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="557" count="1" type="stmt"/>
+        <line num="564" count="2" type="stmt"/>
+        <line num="565" count="2" type="stmt"/>
+        <line num="572" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="573" count="2" type="stmt"/>
+        <line num="574" count="2" type="stmt"/>
+        <line num="578" count="2" type="stmt"/>
+        <line num="580" count="2" type="stmt"/>
+        <line num="590" count="0" type="stmt"/>
+        <line num="595" count="6" type="stmt"/>
+        <line num="596" count="6" type="stmt"/>
+        <line num="598" count="6" type="cond" truecount="5" falsecount="0"/>
+        <line num="599" count="1" type="stmt"/>
+        <line num="604" count="5" type="stmt"/>
+        <line num="608" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="609" count="0" type="stmt"/>
+        <line num="617" count="5" type="stmt"/>
+        <line num="619" count="5" type="stmt"/>
+        <line num="620" count="8" type="stmt"/>
+        <line num="622" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="623" count="2" type="stmt"/>
+        <line num="628" count="6" type="stmt"/>
+        <line num="629" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="630" count="1" type="stmt"/>
+        <line num="635" count="5" type="stmt"/>
+        <line num="642" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="643" count="1" type="stmt"/>
+        <line num="649" count="4" type="stmt"/>
+        <line num="652" count="5" type="stmt"/>
+        <line num="659" count="2" type="stmt"/>
+        <line num="665" count="0" type="stmt"/>
+        <line num="670" count="3" type="stmt"/>
+        <line num="671" count="3" type="stmt"/>
+        <line num="672" count="3" type="stmt"/>
+        <line num="674" count="3" type="stmt"/>
+        <line num="695" count="3" type="stmt"/>
+        <line num="696" count="3" type="stmt"/>
+        <line num="697" count="9" type="stmt"/>
+        <line num="699" count="3" type="stmt"/>
+        <line num="700" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="703" count="3" type="stmt"/>
+        <line num="704" count="4" type="stmt"/>
+        <line num="708" count="3" type="stmt"/>
+        <line num="709" count="3" type="stmt"/>
+        <line num="710" count="4" type="stmt"/>
+        <line num="711" count="2" type="stmt"/>
+        <line num="712" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="713" count="1" type="stmt"/>
+        <line num="719" count="2" type="stmt"/>
+        <line num="720" count="2" type="stmt"/>
+        <line num="724" count="3" type="stmt"/>
+        <line num="732" count="9" type="stmt"/>
+        <line num="737" count="9" type="stmt"/>
+        <line num="748" count="0" type="stmt"/>
+        <line num="753" count="5" type="stmt"/>
+        <line num="754" count="5" type="stmt"/>
+        <line num="756" count="5" type="stmt"/>
+        <line num="758" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="759" count="0" type="stmt"/>
+        <line num="764" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="765" count="1" type="stmt"/>
+        <line num="770" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="771" count="1" type="stmt"/>
+        <line num="776" count="3" type="stmt"/>
+        <line num="781" count="3" type="stmt"/>
+        <line num="791" count="0" type="stmt"/>
+      </file>
+      <file name="userController.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\controllers\userController.js">
+        <metrics statements="51" coveredstatements="46" conditionals="20" coveredconditionals="17" methods="5" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="9" count="18" type="stmt"/>
+        <line num="11" count="18" type="stmt"/>
+        <line num="12" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="20" count="17" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="37" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="39" count="11" type="stmt"/>
+        <line num="42" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="89" count="13" type="stmt"/>
+        <line num="90" count="13" type="stmt"/>
+        <line num="91" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="94" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="97" count="11" type="stmt"/>
+        <line num="98" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="99" count="2" type="stmt"/>
+        <line num="101" count="9" type="stmt"/>
+        <line num="102" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="105" count="8" type="stmt"/>
+        <line num="110" count="8" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="116" count="3" type="stmt"/>
+        <line num="117" count="3" type="stmt"/>
+        <line num="118" count="3" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.helpers">
+      <metrics statements="25" coveredstatements="25" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
+      <file name="bcrypt.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\helpers\bcrypt.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="22" type="stmt"/>
+        <line num="5" count="22" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="geolocation.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\helpers\geolocation.js">
+        <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="33" count="20" type="stmt"/>
+        <line num="43" count="14" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+      <file name="jwt.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\helpers\jwt.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="16" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="109" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.middleware">
+      <metrics statements="25" coveredstatements="24" conditionals="10" coveredconditionals="9" methods="3" coveredmethods="3"/>
+      <file name="authentication.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\middleware\authentication.js">
+        <metrics statements="16" coveredstatements="15" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="123" type="stmt"/>
+        <line num="6" count="123" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="14" type="stmt"/>
+        <line num="10" count="109" type="stmt"/>
+        <line num="11" count="109" type="stmt"/>
+        <line num="13" count="102" type="stmt"/>
+        <line num="15" count="102" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="19" count="99" type="stmt"/>
+        <line num="20" count="99" type="stmt"/>
+        <line num="22" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="authorization.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\middleware\authorization.js">
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="101" type="stmt"/>
+        <line num="8" count="101" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="14" count="100" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="23" count="90" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.models">
+      <metrics statements="82" coveredstatements="81" conditionals="10" coveredconditionals="7" methods="22" coveredmethods="22"/>
+      <file name="cart.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\cart.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="cartitem.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\cartitem.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+      <file name="customerprofile.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\customerprofile.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\index.js">
+        <metrics statements="21" coveredstatements="20" conditionals="10" coveredconditionals="7" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="30" count="9" type="stmt"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="36" count="9" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+      <file name="inventory.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\inventory.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="product.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\product.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+      <file name="staffprofile.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\staffprofile.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="transaction.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\transaction.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+      </file>
+      <file name="transactionitem.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\transactionitem.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+      <file name="user.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\models\user.js">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="15" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.routes">
+      <metrics statements="38" coveredstatements="38" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="customer.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\routes\customer.js">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="payment.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\routes\payment.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="staff.js" path="C:\Users\eki\OneDrive\文档\Hacktiv8\3-phase2\IP-HCK88\server\routes\staff.js">
+        <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

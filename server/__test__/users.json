@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Admin User",
+    "email": "admin@mail.com",
+    "password": "admin123",
+    "role": "Admin"
+  },
+  {
+    "name": "Staff User 1",
+    "email": "staff1@mail.com",
+    "password": "staff123",
+    "role": "Staff"
+  },
+  {
+    "name": "Staff User 2",
+    "email": "staff2@mail.com",
+    "password": "staff123",
+    "role": "Staff"
+  },
+  {
+    "name": "Customer User 1",
+    "email": "customer1@mail.com",
+    "password": "customer123",
+    "role": "Customer"
+  },
+  {
+    "name": "Customer User 2",
+    "email": "customer2@mail.com",
+    "password": "customer123",
+    "role": "Customer"
+  }
+]
