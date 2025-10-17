@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import apiClient from "../helpers/http-client";
 import { selectUser, logout } from "../store/authSlice";
+import { toast } from "react-toastify";
 
 export default function StaffInventory() {
   const dispatch = useDispatch();
@@ -18,14 +19,14 @@ export default function StaffInventory() {
 
   useEffect(() => {
     if (!user) {
-      alert("Anda belum login. Silakan login terlebih dahulu.");
+      toast.error("Anda belum login. Silakan login terlebih dahulu.");
       navigate("/login");
       return;
     }
 
     if (user.role !== "Staff") {
-      alert(
-        `Akses ditolak. Halaman ini hanya untuk Staff.\nRole Anda: ${user.role}`
+      toast.error(
+        `Akses ditolak. Halaman ini hanya untuk Staff. Role Anda: ${user.role}`
       );
       navigate("/");
       return;
@@ -52,7 +53,7 @@ export default function StaffInventory() {
 
       setInventory(uniqueInventory);
     } catch {
-      alert("Gagal memuat inventory");
+      toast.error("Gagal memuat inventory");
     } finally {
       setIsLoading(false);
     }
@@ -63,7 +64,7 @@ export default function StaffInventory() {
       const response = await apiClient.get("/");
       setProducts(response.data || []);
     } catch {
-      alert("Gagal memuat daftar produk");
+      toast.error("Gagal memuat daftar produk");
     }
   };
 
@@ -81,15 +82,15 @@ export default function StaffInventory() {
         isActive: !isActive,
       });
       setIsActive(!isActive);
-      alert(`Status berjualan ${!isActive ? "diaktifkan" : "dinonaktifkan"}`);
+      toast.success(`Status berjualan ${!isActive ? "diaktifkan" : "dinonaktifkan"}`);
     } catch {
-      alert("Gagal mengubah status berjualan");
+      toast.error("Gagal mengubah status berjualan");
     }
   };
 
   const handleUpdateLocation = () => {
     if (!navigator.geolocation) {
-      alert("Geolocation tidak didukung di browser Anda");
+      toast.error("Geolocation tidak didukung di browser Anda");
       return;
     }
 
@@ -104,17 +105,17 @@ export default function StaffInventory() {
           });
 
           setLocation({ lat: latitude, lng: longitude });
-          alert(
-            `Lokasi diperbarui!\nLat: ${latitude.toFixed(
+          toast.success(
+            `Lokasi diperbarui! Lat: ${latitude.toFixed(
               6
-            )}\nLng: ${longitude.toFixed(6)}`
+            )}, Lng: ${longitude.toFixed(6)}`
           );
         } catch {
-          alert("Gagal memperbarui lokasi");
+          toast.error("Gagal memperbarui lokasi");
         }
       },
       () => {
-        alert("Gagal mendapatkan lokasi Anda");
+        toast.error("Gagal mendapatkan lokasi Anda");
       },
       {
         enableHighAccuracy: true,
@@ -139,7 +140,7 @@ export default function StaffInventory() {
         )
       );
     } catch {
-      alert("Gagal memperbarui stok");
+      toast.error("Gagal memperbarui stok");
     }
   };
 
@@ -152,10 +153,10 @@ export default function StaffInventory() {
       }));
 
       await apiClient.post("/staff/inventory/bulk", { items });
-      alert("Semua stok berhasil diperbarui!");
+      toast.success("Semua stok berhasil diperbarui!");
       fetchInventory();
     } catch {
-      alert("Gagal memperbarui stok");
+      toast.error("Gagal memperbarui stok");
     } finally {
       setIsSaving(false);
     }
@@ -165,7 +166,7 @@ export default function StaffInventory() {
     // Check if product already in inventory
     const existing = inventory.find((item) => item.productId === product.id);
     if (existing) {
-      alert("Produk sudah ada di inventory");
+      toast.warning("Produk sudah ada di inventory");
       return;
     }
 
@@ -187,7 +188,7 @@ export default function StaffInventory() {
         },
       ]);
     } catch {
-      alert("Gagal menambahkan produk ke inventory");
+      toast.error("Gagal menambahkan produk ke inventory");
     }
   };
 
@@ -210,9 +211,9 @@ export default function StaffInventory() {
         prev.filter((item) => item.productId !== productId)
       );
 
-      alert(`"${productName}" berhasil dihapus dari inventory`);
+      toast.success(`"${productName}" berhasil dihapus dari inventory`);
     } catch {
-      alert("Gagal menghapus produk dari inventory");
+      toast.error("Gagal menghapus produk dari inventory");
     }
   };
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import apiClient from "../helpers/http-client";
+import { toast } from "react-toastify";
 
 export default function StaffTransaction() {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export default function StaffTransaction() {
       const response = await apiClient.get("/staff/inventory");
       setInventory(response.data.data || []);
     } catch {
-      alert("Failed to fetch inventory. Please try again.");
+      toast.error("Failed to fetch inventory. Please try again.");
     }
   };
 
@@ -29,7 +30,7 @@ export default function StaffTransaction() {
     if (existing) {
       // Cek stok
       if (existing.quantity >= item.availableStock) {
-        alert(`Stok ${item.productName} tidak mencukupi!`);
+        toast.warning(`Stok ${item.productName} tidak mencukupi!`);
         return;
       }
       setCart(
@@ -41,7 +42,7 @@ export default function StaffTransaction() {
       );
     } else {
       if (item.availableStock === 0) {
-        alert(`${item.productName} habis!`);
+        toast.warning(`${item.productName} habis!`);
         return;
       }
       setCart([
@@ -65,7 +66,7 @@ export default function StaffTransaction() {
             const newQuantity = item.quantity + delta;
             if (newQuantity <= 0) return null;
             if (newQuantity > item.maxStock) {
-              alert(`Stok maksimal: ${item.maxStock}`);
+              toast.warning(`Stok maksimal: ${item.maxStock}`);
               return item;
             }
             return { ...item, quantity: newQuantity };
@@ -86,7 +87,7 @@ export default function StaffTransaction() {
 
   const handleGenerateQRIS = async () => {
     if (cart.length === 0) {
-      alert("Keranjang masih kosong!");
+      toast.warning("Keranjang masih kosong!");
       return;
     }
 
@@ -101,9 +102,9 @@ export default function StaffTransaction() {
 
       setQrisData(response.data.data);
       setCurrentTransaction(response.data.data);
-      alert("QRIS berhasil di-generate! Tunjukkan QR Code ke customer.");
+      toast.success("QRIS berhasil di-generate! Tunjukkan QR Code ke customer.");
     } catch (error) {
-      alert(
+      toast.error(
         error.response?.data?.error ||
           "Gagal generate QRIS. Periksa stok dan coba lagi."
       );
@@ -124,7 +125,7 @@ export default function StaffTransaction() {
       const status = response.data.data.status;
 
       if (status === "paid" || status === "completed") {
-        alert("✅ Pembayaran berhasil! Transaction completed.");
+        toast.success("✅ Pembayaran berhasil! Transaction completed.");
         // Reset form
         setCart([]);
         setQrisData(null);
@@ -132,14 +133,14 @@ export default function StaffTransaction() {
         // Refresh inventory
         fetchInventory();
       } else if (status === "expired") {
-        alert("❌ QRIS sudah expired. Buat transaksi baru.");
+        toast.error("❌ QRIS sudah expired. Buat transaksi baru.");
         setQrisData(null);
         setCurrentTransaction(null);
       } else {
-        alert(`Status: ${status}. Menunggu pembayaran...`);
+        toast.info(`Status: ${status}. Menunggu pembayaran...`);
       }
     } catch {
-      alert("Gagal cek status pembayaran");
+      toast.error("Gagal cek status pembayaran");
     } finally {
       setIsCheckingStatus(false);
     }

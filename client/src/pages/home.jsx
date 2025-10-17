@@ -10,6 +10,7 @@ import {
   updateCurrentLocation,
   setUserLocation,
 } from "../store/locationSlice";
+import { toast } from "react-toastify";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ export default function Home() {
       });
       setProducts(response.data);
     } catch {
-      alert("Failed to fetch products. Please try again.");
+      toast.error("Failed to fetch products. Please try again.");
     }
   };
 
@@ -47,7 +48,7 @@ export default function Home() {
       }
     } catch (error) {
       if (error.response?.status !== 400) {
-        alert("Failed to fetch nearest sellers. Please try again.");
+        toast.error("Failed to fetch nearest sellers. Please try again.");
       }
     }
   };
@@ -58,7 +59,7 @@ export default function Home() {
 
       await fetchNearestSellers();
 
-      alert(
+      toast.success(
         `Lokasi berhasil diperbarui!\nLatitude: ${result.lat.toFixed(
           6
         )}\nLongitude: ${result.lng.toFixed(6)}`
@@ -71,7 +72,7 @@ export default function Home() {
         errorMessage = error.message;
       }
 
-      alert(errorMessage);
+      toast.error(errorMessage);
     }
   };
 

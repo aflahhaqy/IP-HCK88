@@ -1,6 +1,7 @@
 import { useState } from "react";
 import apiClient from "../helpers/http-client";
 import { useNavigate } from "react-router";
+import { toast } from "react-toastify";
 
 export default function Register() {
     const navigate = useNavigate();
@@ -13,10 +14,10 @@ export default function Register() {
     e.preventDefault();
     try {
       await apiClient.post("/register", { email, password, name });
-      alert("Registration successful! Please login.");
+      toast.success("Registration successful! Please login.");
       navigate("/login");
     } catch (error) {
-      alert(error.response?.data?.error || "Registration failed. Please try again.");
+      toast.error(error.response?.data?.error || "Registration failed. Please try again.");
     }
   };
 
