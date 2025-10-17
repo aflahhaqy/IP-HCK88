@@ -17,9 +17,17 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "setupFilesAfterEnv": ["./__test__/setup.js"],
+    "testMatch": ["**/__test__/**/*.test.js"],
+    "rootDir": ".",
+    "setupFilesAfterEnv": ["<rootDir>/__test__/setup.js"],
     "coveragePathIgnorePatterns": [
       "/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lc01-aflahhaqy/",
+      "/slc01-aflahhaqy/",
+      "/gc01-aflahhaqy/"
     ]
   },
   "keywords": [],

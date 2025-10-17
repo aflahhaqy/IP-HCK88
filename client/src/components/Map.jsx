@@ -30,7 +30,7 @@ export default function Map({
         container: mapContainer.current,
         style: maptilersdk.MapStyle.STREETS.DARK,
         center: [106.8456, -6.2088],
-        zoom: 25,
+        zoom: 15,
       });
     } catch {
       return;
@@ -48,7 +48,7 @@ export default function Map({
         .addTo(map.current);
 
       // center map on user
-      map.current.flyTo({ center: [lng, lat], zoom: 13 });
+      map.current.flyTo({ center: [lng, lat], zoom: 15 });
 
       // callback to parent with coords
       if (typeof onLocation === "function") {
@@ -67,7 +67,7 @@ export default function Map({
             .addTo(map.current);
 
           // center map on user
-          map.current.flyTo({ center: [lng, lat], zoom: 13 });
+          map.current.flyTo({ center: [lng, lat], zoom: 15 });
 
           // callback to parent with coords
           if (typeof onLocation === "function") {

@@ -186,8 +186,6 @@ export default function StaffInventory() {
           availableStock: 0,
         },
       ]);
-
-      alert(`"${product.name}" berhasil ditambahkan ke inventory`);
     } catch {
       alert("Gagal menambahkan produk ke inventory");
     }
