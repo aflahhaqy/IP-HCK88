@@ -1,6 +1,7 @@
 import { useState } from "react";
 import apiClient from "../helpers/http-client";
 import { useNavigate } from "react-router";
+import { toast } from "react-toastify";
 
 export default function RegisterStaff() {
   const navigate = useNavigate();
@@ -18,10 +19,10 @@ export default function RegisterStaff() {
         name,
         role: "Staff",
       });
-      alert("Registration successful! Please login.");
+      toast.success("Registration successful! Please login.");
       navigate("/login");
     } catch (error) {
-      alert(error.response?.data?.error || "Staff registration failed. Please try again.");
+      toast.error(error.response?.data?.error || "Staff registration failed. Please try again.");
     }
   };
 

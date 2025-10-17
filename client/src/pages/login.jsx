@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import apiClient from "../helpers/http-client";
 import { useNavigate } from "react-router";
 import { loginSuccess, selectUser } from "../store/authSlice";
+import { toast } from "react-toastify";
 
 export default function Login() {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ export default function Login() {
         navigate("/");
       }
     } catch (error) {
-      alert(error.response?.data?.error || "Login failed. Please check your credentials.");
+      toast.error(error.response?.data?.error || "Login failed. Please check your credentials.");
     }
   };
   const handleCredentialResponse = useCallback(
@@ -41,7 +42,7 @@ export default function Login() {
 
         navigate("/");
       } catch (error) {
-        alert(error.response?.data?.error || "Google login failed. Please try again.");
+        toast.error(error.response?.data?.error || "Google login failed. Please try again.");
       }
     },
     [navigate, dispatch]

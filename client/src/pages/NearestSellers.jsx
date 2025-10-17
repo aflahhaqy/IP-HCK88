@@ -10,6 +10,7 @@ import {
   updateCurrentLocation,
   setUserLocation,
 } from "../store/locationSlice";
+import { toast } from "react-toastify";
 
 export default function NearestSellers() {
   const dispatch = useDispatch();
@@ -47,9 +48,9 @@ export default function NearestSellers() {
       }
     } catch (error) {
       if (error.response?.status === 400) {
-        alert("Lokasi Anda belum diset. Silakan update lokasi terlebih dahulu.");
+        toast.warning("Lokasi Anda belum diset. Silakan update lokasi terlebih dahulu.");
       } else {
-        alert("Failed to fetch nearest sellers. Please try again.");
+        toast.error("Failed to fetch nearest sellers. Please try again.");
       }
     } finally {
       setIsLoading(false);
@@ -61,7 +62,7 @@ export default function NearestSellers() {
       // Dispatch Redux action to update location
       await dispatch(updateCurrentLocation()).unwrap();
 
-      alert("Lokasi berhasil diperbarui!");
+      toast.success("Lokasi berhasil diperbarui!");
       // Refresh sellers
       fetchNearestSellers();
     } catch (error) {
@@ -72,7 +73,7 @@ export default function NearestSellers() {
         errorMessage = error.message;
       }
 
-      alert(errorMessage);
+      toast.error(errorMessage);
     }
   };
 
